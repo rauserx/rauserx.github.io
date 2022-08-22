@@ -1,0 +1,154 @@
+
+/*configuracion basica de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*ni idea*/
+body{
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+/*ni idea*/
+.publicacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*le damos tamaño a la publicacion*/
+.publicacion figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+/*le damos tamaño de imagen a la img de la publicacion*/
+.publicacion figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+/*ni idea*/
+.publicacion figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);  
+    transition: all 500ms ease-out;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+/**/
+.publicacion figure .capa h3{
+    color: #fff;
+}
+/*activamos el hover para que aparezca todo lo anterior al pasar el mouse*/
+.publicacion figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/*el texto que aparece le damos edicion, mas centrado*/
+.publicacion figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+/*para que la transicion aparezca mas piola*/
+.publicacion figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+/**/
+.publicacion figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.contenedor{
+    display: flex;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*---  PUBLICACIONES  ---*/
+      /*  BOEDO  */
+
+/*
+      
+      .titulo{
+        text-align: center;
+    }
+    
+    #publicacion1{
+                text-align: center;
+        color: brown;
+        font-size: 20px;
+        width: 500px;
+        height: 550px;
+        border-radius: 10%;
+        background: linear-gradient(gray,white);
+        margin-left: 10px;
+    }
+    
+    #publicacion1 > img{
+        width: 450px;
+        height: 400px;
+    }
+    
+    .parrafos1 {
+        color: black;
+        
+    }
+    
+    
+    #imagen{
+        transition: all 2s ease-in-out 2s;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #imagen1:hover {        
+        cursor: pointer;
+        border-radius: 90px;
+        transition: .4s;
+        opacity: 60% ;
+    }
+    
+    #imagen1:not(:hover){
+        border-radius: 0;
+        transition: 1.5s;
+    }
+    
+
+
+
+
+
+
+*/

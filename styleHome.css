@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/*arrancamos...*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+/* ponemos imagen de fondo*/
+body{
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+/*fondo negro a todo*/
+nav{ 
+    max-width: 900px;
+    margin: auto;
+    /*background-color: #333;*/       /*--------------en edicion------------------*/
+    font-size: 20px;
+    margin-top: 50px;
+}
+/*uno al lado del otro, y cada sub-menu 
+debajo de su menu correspondiente*/
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+/*a los botones principales le damos edicion*/
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}/*ponemos el efecto hover a los botones */
+.menu-horizontal >li:hover{
+    background-color: aquamarine;
+    transition: .5s;
+
+}/*ponemos para que aparezca el submenu 
+cuando le damos mouse con el hover*/
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0,0,0,.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+/*le damos efecto al submenu, que se ponga negro al hover*/
+.menu-vertical li:hover{
+    background-color: black;
+    transition: .6s;
+
+}
+/*un poco de edicion a los submenu, mas estetica*/
+.menu-vertical li a{
+    display: block;
+    color: wheat;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+/*editamos la barra busqueda*/
+.barradebusqueda{
+    text-align: right;
+    padding: 10px;
+    /*background-color: gray;*/ /*----------en edicion--------------*/
+}
+
+/*esto creo que esta re alpedo*/
+.barradebusqueda > #inputbusqueda{
+    color: rgb(218, 55, 55);
+    background-color: rgb(194, 194, 194);
+    width: 200px;
+    height: 37px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+/*editamos el boton*/
+.barradebusqueda > #search{
+    background-color: rgb(215, 247, 239);
+    height: 35px;
+    width: 80px;
+    
+}
+
+/*le ponemos hover al boton*/
+.barradebusqueda > #search:hover{
+    background-color: rgb(42, 42, 42);
+    border-radius: 50px;
+    height: 35px;
+    width: 80px;
+    color: gray;
+    transition: .4s;
+    font-size: medium;
+
+}
+
+
+.lihome{
+    background-color: red;
+    border-radius: 20%;
+    
+}
+/*actualizacion 08.06.2022
+  Con esto pongo el background responsive
+*/
+.html,body{
+    height: 100vh;
+}
+
+body{
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #fff;
+text-align: center;
+color: #000;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
